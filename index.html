@@ -4,82 +4,777 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/project-sweets/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap" rel="stylesheet">
+    <title>Simply Chocolate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" 
+    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     
     <script type="module" crossorigin src="/project-sweets/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project-sweets/assets/index-10c40100.css">
+    <link rel="modulepreload" crossorigin href="/project-sweets/assets/vendor-2a1ad074.js">
+    <link rel="stylesheet" href="/project-sweets/assets/vendor-7ff437f0.css">
+    <link rel="stylesheet" href="/project-sweets/assets/index-06e9f061.css">
   </head>
   <body>
-    <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/project-sweets/assets/javascript-8dac5379.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
-        </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
-        </li>
-      </ul>
-    </div>
-
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/project-sweets/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
+    <!---->
+<div class="preloader">
+    <div class="lds-grid">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
   </div>
+
+    <header class="header">
+    <div class="container header-container">
+
+    <a class="header-logo-link" href="./index.html"> 
+       <span class="header-logo-italic">SIMPLY</span>  CHOCOLATE
+    <img class="header-img" src="/project-sweets/assets/chocolate-153919d8.svg" alt="chocolare icon" />
+</a>
+
+<button
+type="button"
+class="header-menu-link-mob"
+id="open-mobile-menu"
+name="Open mobile menu"
+>
+<svg class="header-menu-svg" width="28" height="28">
+  <use href="/project-sweets/assets/symbol-defs-c45f6c34.svg#menu"></use>
+</svg>
+</button>
+<!--Header menu-->
+
+<div class="header-desk">
+<nav class="header-navigation">
+   <ul class="header-menu-list">
+<li class="header-menu-item"> 
+    <a class="header-menu-link" href="">Home</a>
+</li>
+<li class="header-menu-item">
+    <a class="header-menu-link" href="#made">How it is made?</a>
+</li>
+<li class="header-menu-item">
+    <a class="header-menu-link" href="#loved">Chocolate is loved</a>
+</li>
+   </ul>
+</nav>
+<!--Header icons list-->
+<ul class="header-list">
+
+    <li class="header-list-item"> 
+        <a class="header-list-link" 
+        href="" target="_blank" 
+        rel="noopener noreferrer">
+     <svg width="24" height="24" class="header-soc-link">
+        <use href="/project-sweets/assets/symbol-defs-c45f6c34.svg#icon-instagram"></use>
+    </svg>
+    </a>
+    </li>
+
+    <li class="header-list-item"> 
+        <a class="header-list-link" 
+        href="" target="_blank" 
+        rel="noopener noreferrer">
+        <svg width="24" height="24" class="header-soc-link">
+            <use href="/project-sweets/assets/symbol-defs-c45f6c34.svg#icon-facebook"></use>
+        </svg>
+    </a>
+    </li>
+
+    <li class="header-list-item"> 
+        <a class="header-list-link" 
+        href="" target="_blank" 
+        rel="noopener noreferrer">
+        <svg width="24" height="24" class="header-soc-link">
+            <use href="/project-sweets/assets/symbol-defs-c45f6c34.svg#icon-twitter"></use>
+        </svg>
+    </a>
+    </li>
+
+</ul>
+</div>
+</div>
+<!--mobile menu-->
+<div class="mobile-menu" id="mobile-menu">
+    <div class="mob-menu-wrap">
+      <button
+        type="button"
+        class="close-mobile-menu"
+        id="close-mobile-menu"
+        name="Close mobile menu"
+      >
+        <svg class="close-btn-icon" width="28" height="28">
+          <use href="/project-sweets/assets/symbol-defs-c45f6c34.svg#icon-close"></use>
+        </svg>
+      </button>
+    
+
+    <nav class="mob-nav">
+      <ul class="mob-nav-list">
+        <li class="mob-nav-list-item">
+          <a href="" class="mob-nav-list-link">Home</a>
+        </li>
+        <li class="mob-nav-list-item">
+          <a href="#made" class="mob-nav-list-link"> How it is made?</a>
+        </li>
+        <li class="mob-nav-list-item">
+          <a href="#loved" class="mob-nav-list-link">Chocolate is loved</a>
+        </li>
+      </ul>
+    </nav>
+
+    <ul class="header-icons-list-mob">
+
+        <li class="header-list-item-mob"> 
+            <a class="header-list-link-mob" 
+            href="" target="_blank" 
+            rel="noopener noreferrer">
+         <svg width="24" height="24" class="header-soc-link-mob">
+            <use href="/project-sweets/assets/symbol-defs-c45f6c34.svg#icon-instagram"></use>
+        </svg>
+        </a>
+        </li>
+    
+        <li class="header-list-item-mob"> 
+            <a class="header-list-link-mob" 
+            href="" target="_blank" 
+            rel="noopener noreferrer">
+            <svg width="24" height="24" class="header-soc-link-mob">
+                <use href="/project-sweets/assets/symbol-defs-c45f6c34.svg#icon-facebook"></use>
+            </svg>
+        </a>
+        </li>
+    
+        <li class="header-list-item-mob"> 
+            <a class="header-list-link-mob" 
+            href="" target="_blank" 
+            rel="noopener noreferrer">
+            <svg width="24" height="24" class="header-soc-link-mob">
+                <use href="/project-sweets/assets/symbol-defs-c45f6c34.svg#icon-twitter"></use>
+            </svg>
+        </a>
+        </li>
+    
+    </ul>
+</div>
+  </div>
+</header>
+
+    <main>
+      <section class="hero" >
+    <div class="container hero-container">
+<!---Scroll_up-->
+      <a href="#top" class="scroll__btn" id="scrollBtn">
+        <svg class="scroll__svg" width="32" height="32">
+            <use href="/project-sweets/assets/icons-b3cc8151.svg#icon-scroll-up"></use>
+        </svg>
+    </a>
+<!---Scroll_up-->
+    <h1 class="hero-title">
+        Treat yourself or a loved one to<br /> 
+        our finest ingredients for a moment 
+        of pure delight!
+    </h1>
+  <div class="hero-buttons">
+    <div class="hero-buttons-right">
+    <button type="button" class="hero-buy-btn">Buy now</button>
+    <a href="#made" class="hero-made-btn">How it is made</a>
+  </div>
+    <div class="hero-down-block">
+    <a href="" class="hero-down-btn">scroll down</a>
+    <a class="hero-down-link" 
+        href="#footer" target="" 
+        rel="noopener noreferrer">
+     <svg width="16" height="16" class="hero-down-svg">
+        <use href="/project-sweets/assets/symbol-defs-c45f6c34.svg#icon-down"></use>
+    </svg>
+    </a>
+  </div>
+</div> 
+</div>
 </section>
 
+      <section class="features">
+    <div class="container features-container">
+            <h2 class="visually-hidden">features</h2>
+    <ul class="features-list">
+        <li class="features-item">
+            <a class="featers-soc-link" 
+                href="" target="_blank" 
+                rel="noopener noreferrer">
+             <svg width="32" height="32" class="featers-soc-svg">
+                <use href="/project-sweets/assets/symbol-defs-c45f6c34.svg#icon-chocolate"></use>
+            </svg>
+            </a>
+            <h3 class="features-subtitle">Unsurpassed taste</h3>
+            <p class="feature-item-text"> Crafted with the finest quality cocoa beans and a dedication to perfection, each bite is a decadent experience that simply cannot be matched. Savor the richness and complexity of our Unsurpassed Taste and discover a new level of chocolate bliss.</p>
+        </li>
+        <li class="features-item">
+            <a class="featers-soc-link" 
+                href="" target="_blank" 
+                rel="noopener noreferrer">
+             <svg width="32" height="32" class="featers-soc-svg">
+                <use href="/project-sweets/assets/symbol-defs-c45f6c34.svg#icon-coin"></use>
+            </svg>
+            </a>
+            <h3 class="features-subtitle">Affordable price</h3>
+            <p class="feature-item-text">Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's selection of affordable treats. Enjoy mouth-watering truffles and velvety chocolate bars without sacrificing taste or quality. Browse our selection and indulge in affordable luxury today.</p>
+        </li>
+        <li class="features-item">
+            <a class="featers-soc-link" 
+                href="" target="_blank" 
+                rel="noopener noreferrer">
+             <svg width="32" height="32" class="featers-soc-svg">
+                <use href="/project-sweets/assets/symbol-defs-c45f6c34.svg#icon-spoon"></use>
+            </svg>
+            </a>
+            <h3 class="features-subtitle">Own production</h3>
+            <p class="feature-item-text">We take pride in our own production process, ensuring that every step is carefully crafted to perfection. From selecting the finest ingredients to handcrafting each piece, our attention to detail is evident in every bite.</p>
+        </li>
+    </ul>
+    </div>
+    </section>
 
+      <section class="taste" id="taste">
+    <div class="container taste-container">
+        <h2 class="taste-title">IT ALL ADDS UP TO ONE EXCEPTIONAL <span>TASTE</span> SENSATION</h2>
+        <p class="taste-text">At Simply Chocolate, we believe that the secret to exceptional chocolate is in the details. From the sourcing of the finest ingredients to the careful crafting of each individual piece, every step of our process adds up to one exceptional taste sensation.</p>
+    <ul class="taste-list">
+        <li class="taste-item">
+                    <button type="button" class="swiper-button-next">
+                    <svg class="swiper-icon" width="24" height="24">
+                      <use href="/project-sweets/assets/icons-b3cc8151.svg#icon-arrow_right_btn"></use>
+                    </svg>
+                  </button>
+
+            <div class="card__front">
+            <img class="taste-img" src="/project-sweets/assets/img-1-d765f2c1.jpg" alt="MILK CHOCOLATE"/>
+            <h3 class="taste-subtitle"> MILK CHOCOLATE</h3>
+        </div>
+    
+        <div class="card__back">
+            
+    <h3 class="taste-back-title">Milk chocolate</h3>
+    <div class="taste-buttons">
+        <button type="button" class="taste-right-btn">chocolate</button>
+        <a href="" class="taste-benefits-btn">the benefits</a>
+      </div>
+    <p class="taste-back-text">Milk chocolate is a solid chocolate confectionery containing cocoa, sugar and milk. It is the most consumed type of chocolate. Chocolate was originally sold and consumed as a beverage in pre-Columbian times. Although four-fifths of all milk chocolate is sold in the United States and Europe.</p>
+        </div>
+    
+        </li>
+        <li class="taste-item">
+                <button type="button" class="swiper-button-next">
+                    <svg class="swiper-icon" width="24" height="24">
+                      <use href="/project-sweets/assets/icons-b3cc8151.svg#icon-arrow_right_btn"></use>
+                    </svg>
+                  </button>
+
+            <div class="card__front">
+
+            <img class="taste-img" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIAKAA1gMBIgACEQEDEQH/xAAxAAEBAAMBAQEAAAAAAAAAAAAABQEDBAYHAgEBAQEBAQAAAAAAAAAAAAAAAAECAwT/2gAMAwEAAhADEAAAAPv4AAAABgZhcHn36x4n23XIbgAAAAAAAAAAEDjq85m7GsgAAAAAAAAAADm6Z8cHH2y5d/qvCX6uiwAAAAAAAAADHF1cuLomUJ8svTtm19Pfj97yAAAAAAAAABzfnOcanTu+bE6XTlV9DpR7G8gAAAAAAAAAcucZxqZMpzImSqkqz6BYj2NwAAAAAAAAADmxnGNTZdWVEyVUlWfRak6juAAAAAAAAAAaPxs141OlVZUS5VWVZ9K75tLcAAAAAAAAAA069/PjU+VVlRKl1Jln0vt07twAAAAAAAAABy9SIM71yXwNn0ubAoAAAAD/xAA2EAABAwEFAwgKAwEAAAAAAAABAAIDBAURMUBBBhIhEyIlMjNRcpEUMDRTYXGBkqGxNVJz0f/aAAgBAQABPwD1hexuLgFy8PvG+aDmuwIOYffuOuxuTpGXEhwP1U1eIx1PyqO1auevp4oIgAXjfONzdcz6IwGXk3Fjd480Bt35CNGSeMx+xn/FZFLEyu5Qjek3SA8gX3fQDMONzSUDzHFFUL9yqacxXzNijuJuvTp7oiQ3zRqj/UJlU1sjHXEXFMcHNDgcRl6uNtU/nEj4hVFKRHutf5hOge3FwUl41VgVxL3Qvdpwy0puYU3ElTlSqZUk5gqmPB1TXBzQ4YEX5WrfgNE3BTnipMFMnuucCrHm5Wz4D3AjK1R56A4KfrFSlTKUrZl5dZ5Hc/K1ParRT9YqVTKZbKewSePK1ParRT9YqVTKZbKewSePK1PahaKoxKlUymWyo6Pf/plartQtFUYlSqZSrZYdGk98h/QytX2oWiqMSpVMpVswOi2+M5Ws7ULRVGJUqm1Uq2a/i4/EcrW9o1aBVGJUqmUqsAgWVF4jla3rtWiqMSplMpVs9cLLh+bsrWMA3SFoqjEqZTKQcVZkZp7NpozwduXn68cqQCCCpY5Im3kFw71M9jtVLxwT4XvdujHuHE+QVmWFuSCeqbhxaw/s5hzGOxY0/ML0eD3LPtCa1rRc1oA+Hrf/xAAeEQABBAMAAwAAAAAAAAAAAAABABEwMQISIBNAUv/aAAgBAgEBPwDrzH5WGWwr2iWToGQ3MbmNzG5jcxuZlqm7/8QAGxEAAgEFAAAAAAAAAAAAAAAAAREwABIgQGD/2gAIAQMBAT8AytohbalHKuD/2Q==" alt="MILK"/>
+            <h3 class="taste-subtitle">MILK</h3>
+            </div>
+    
+            <div class="card__back">
+                <h3 class="taste-back-title">Milk</h3>
+                <div class="taste-buttons">
+                    <button type="button" class="taste-right-btn">milk </button>
+                    <a href="" class="taste-benefits-btn">the benefits</a>
+                  </div>
+                <p class="taste-back-text">Milk is a white liquid food produced by the mammary glands of mammals. It is the primary source of nutrition for young mammals (including breastfed human infants) before they are able to digest solid food.Early-lactation milk, which is called colostrum, contains antibodies that strengthen the immune system.</p>
+                    </div>
+    
+        </li>
+        <li class="taste-item">
+
+                <button type="button" class="swiper-button-next">
+                    <svg class="swiper-icon" width="24" height="24">
+                      <use href="/project-sweets/assets/icons-b3cc8151.svg#icon-arrow_right_btn"></use>
+                    </svg>
+                  </button>
+
+            <div class="card__front">
+
+            <img class="taste-img" src="data:image/jpeg;base64,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" alt="NUTS"/>
+            <h3 class="taste-subtitle">NUTS</h3>
+            </div>
+    
+            <div class="card__back">
+                <h3 class="taste-back-title">Nuts</h3>
+                <div class="taste-buttons">
+                    <button type="button" class="taste-right-btn">nuts</button>
+                    <a href="" class="taste-benefits-btn">the benefits</a>
+                  </div>
+                <p class="taste-back-text">Almonds, pistachios, and walnuts are some types of nuts that contain healthy nutrients. When eaten as part of a nutrient-dense diet, these 9 nuts may offer benefits such as reducing your risk of heart disease. They’re a good source of fiber, healthy fats, and plant protein. Plus, they’re great on their own.</p>
+                    </div>
+    
+        </li>
+        <li class="taste-item">
+
+                <button type="button" class="swiper-button-next">
+                    <svg class="swiper-icon" width="24" height="24">
+                      <use href="/project-sweets/assets/icons-b3cc8151.svg#icon-arrow_right_btn"></use>
+                    </svg>
+                  </button>   
+
+            <div class="card__front">
+
+            <img class="taste-img" src="/project-sweets/assets/img-4-2b51be49.jpg" alt="SEMI - SWEET CHOCOLATE"/>
+            <h3 class="taste-subtitle">SEMI - SWEET CHOCOLATE</h3>
+            </div>
+    
+            <div class="card__back">
+                <h3 class="taste-back-title">semi - sweet chocolatee</h3>
+                <div class="taste-buttons">
+                    <button type="button" class="taste-right-btn">semi - sweet chocolate</button>
+                    <a href="" class="taste-benefits-btn">the benefits</a>
+                  </div>
+                <p class="taste-back-text">Semi-sweet chocolate has a cocoa solid content of 35 to 65%. One of the best ways to gain an understanding of this type of chocolate is to compare it to a different type of chocolate. Semisweet is darker than milk chocolate. In a taste comparison, it has a slightly bitter taste whereas milk chocolate is sweeter.</p>
+                    </div>
+    
+        </li>
+        <li class="taste-item">
+
+                <button type="button" class="swiper-button-next">
+                    <svg class="swiper-icon" width="24" height="24">
+                      <use href="/project-sweets/assets/icons-b3cc8151.svg#icon-arrow_right_btn"></use>
+                    </svg>
+                  </button>
+
+            <div class="card__front">
+
+            <img class="taste-img" src="/project-sweets/assets/img-5-4e027a05.jpg" alt="CACAO"/>
+            <h3 class="taste-subtitle">CACAO</h3>
+            </div>
+    
+        <div class="card__back">
+    <h3 class="taste-back-title">cacao</h3>
+    <div class="taste-buttons">
+        <button type="button" class="taste-right-btn">cacao</button>
+        <a href="" class="taste-benefits-btn">the benefits</a>
+      </div>
+    <p class="taste-back-text">Cocoa is a natural product obtained from the fruits of the cocoa tree (Theobroma cacao). This tropical fruit contains beans, from which cocoa mass, cocoa powder and chocolate are made. The history of the use of cocoa goes back to ancient times. Already in ancient Mesoamerica, the Mayan and Aztec civilizations used cocoa in their culture and rituals</p>
+        </div>
+    
+        </li>
+        <li class="taste-item">
+                <button type="button" class="swiper-button-next">
+                    <svg class="swiper-icon" width="24" height="24">
+                      <use href="/project-sweets/assets/icons-b3cc8151.svg#icon-arrow_right_btn"></use>
+                    </svg>
+                  </button>
+
+            <div class="card__front">
+
+            <img class="taste-img" src="/project-sweets/assets/img-6-46a04cf4.jpg" alt="RASPBERRY"/>
+            <h3 class="taste-subtitle">RASPBERRY</h3>
+            </div>
+    
+            <div class="card__back">
+                <h3 class="taste-back-title">raspberry</h3>
+                <div class="taste-buttons">
+                    <button type="button" class="taste-right-btn">raspberry</button>
+                    <a href="" class="taste-benefits-btn">the benefits</a>
+                  </div>
+                <p class="taste-back-text">Raspberry is a tasty and aromatic berry plant that is popular all over the world. It belongs to the pink family and grows in many regions, including North America, Europe and Asia. Raspberries have many varieties and color variations, from red to yellow and black.</p>
+                    </div>
+    
+        </li>
+        <li class="taste-item">
+
+                 <button type="button" class="swiper-button-next">
+                    <svg class="swiper-icon" width="24" height="24">
+                      <use href="/project-sweets/assets/icons-b3cc8151.svg#icon-arrow_right_btn"></use>
+                    </svg>
+                  </button>           
+            <div class="card__front">
+
+            <img class="taste-img" src="/project-sweets/assets/img-7-5a95b115.jpg" alt="COCONUT"/>
+            <h3 class="taste-subtitle">COCONUT OIL</h3>
+            </div>
+    
+        <div class="card__back">
+    <h3 class="taste-back-title">COCONUT OIL</h3>
+    <div class="taste-buttons">
+        <button type="button" class="taste-right-btn">coconut oil</button>
+        <a href="" class="taste-benefits-btn">the benefits</a>
+      </div>
+    <p class="taste-back-text">Cocoa is a natural product obtained from the fruits of the cocoa tree (Theobroma cacao). This tropical fruit contains beans, from which cocoa mass, cocoa powder and chocolate are made. The history of the use of cocoa goes back to ancient times. Already in ancient Mesoamerica, the Mayan and Aztec civilizations used cocoa in their culture and rituals</p>
+        </div>
+    
+        </li>
+    </ul>
+    </div>
+    </section>
+
+      <section class="made" id="made">
+    <div class="container made-container">
+    <h2 class="made-title"> HOW IT IS <span>MADE?</span></h2>
+    <div class="made-wrap">
+            <img class="made-img" src="/project-sweets/assets/image-df07686b.jpg" alt="dark_chocolate"/>
+            <div class="made-content">
+            <h3 class="made-subtitle">Try  our chocolates today and discover the perfect balance of flavor</h3>
+            <ul class="made-list">
+                <li class="made-item">
+                    <p class="made-item-text">Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.</p>
+                </li>
+                <li class="made-item">
+                    <p class="made-item-text">At the same time, prepare a water bath. Melt the butter on it.</p>
+                </li>
+                <li class="made-item">
+                    <p class="made-item-text">"Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone spatula so that the mass becomes uniform and silky.</p>
+                </li>
+                <li class="made-item">
+                    <p class="made-item-text">Heat the mixture over low heat, letting it barely boil.</p>
+                </li>
+                <li class="made-item">
+                    <p class="made-item-text">Pour the chocolate into special containers (can be replaced with ice molds). Allow to cool and harden.</p>
+                </li>
+                </ul>
+                </div>
+    
+    </div>
+    </div>
+    </section>
+
+      <section class="products" id="products">
+    <div class="container products-conyainer">
+        <h2 class="products-title">OUR <span>PRODUCTS</span></h2>
+        <ul class="products-list">
+            <li class="product-item">
+                <img class="product-img" src="/project-sweets/assets/img-1-8cb20d76.jpg" alt="ORANGE"/>
+                <h3 class="products-subtitle">ORANGE</h3>
+                <p class="products-item-text">Dark chocolate</p>
+                <button type="button" class="products-item-btn">45 UAH</button>
+            </li>
+            <li class="product-item">
+                <img class="product-img" src="/project-sweets/assets/img-2-3b18e0d3.jpg" alt="APPLE&CRANBERRY"/>
+                <h3 class="products-subtitle">APPLE&CRANBERRY</h3>
+                <p class="products-item-text">Milk chocolate</p>
+                <button type="button" class="products-item-btn">50 UAH</button>
+            </li>
+            <li class="product-item">
+                <img class="product-img" src="/project-sweets/assets/img-3-4f759f28.jpg" alt="lime&sea salt"/>
+                <h3 class="products-subtitle">lime&sea salt</h3>
+                <p class="products-item-text">Dark chocolate</p>
+                <button type="button" class="products-item-btn">66 UAH</button>
+            </li>
+            <li class="product-item">
+                <img class="product-img" src="/project-sweets/assets/img-4-ef925477.jpg" alt="PINEAPPLE"/>
+                <h3 class="products-subtitle">PINEAPPLE</h3>
+                <p class="products-item-text">Dark chocolate</p>
+                <button type="button" class="products-item-btn">54 UAH</button>
+            </li>
+            <li class="product-item">
+                <img class="product-img" src="/project-sweets/assets/img-5-db1df897.jpg" alt="Classic"/>
+                <h3 class="products-subtitle">Classic</h3>
+                <p class="products-item-text">Milk chocolate</p>
+                <button type="button" class="products-item-btn">45 UAH</button>
+            </li>
+            <li class="product-item">
+                <img class="product-img" src="/project-sweets/assets/img-6-3499c521.jpg" alt="Honey"/>
+                <h3 class="products-subtitle">Honey</h3>
+                <p class="products-item-text">Milk chocolate</p>
+                <button type="button" class="products-item-btn">50 UAH</button>
+            </li>
+            <li class="product-item">
+                <img class="product-img" src="/project-sweets/assets/img-7-1f7bc79d.jpg" alt="Roasted fruits"/>
+                <h3 class="products-subtitle">Roasted fruits</h3>
+                <p class="products-item-text">Dark chocolate</p>
+                <button type="button" class="products-item-btn">66 UAH</button>
+            </li>
+            <li class="product-item">
+                <img class="product-img" src="/project-sweets/assets/img-8-f9f1f980.jpg" alt="Classic2"/>
+                <h3 class="products-subtitle">Classic</h3>
+                <p class="products-item-text">White chocolate</p>
+                <button type="button" class="products-item-btn">54 UAH</button>
+            </li>
+        </ul>
+    </div>
+    </section>
+
+      <section class="sellers" id="sellers">
+    <div class="container sellers-container">
+    <h2 class="sellers-title"><span>TOP</span> SELLERS</h2>
+    <ul class="sellers-list">
+        <li class="sellers-list-item">
+    
+    <div class="sellers-cover-wrap">
+            <img class="sellers-img" src="/project-sweets/assets/img-1-c2c3fb7d.jpg" alt="CHOCOLATE WITH NUTS"/>
+          <div class="sellers-text-wrap">
+          <p class="sellers-cover-text">Chocolate with nuts is a delectable combination that brings together the smoothness of chocolate and the crunchiness of nuts. Whether it's milk chocolate, dark chocolate, or white chocolate, the addition of nuts adds a whole new dimension of flavor and texture.
+          </p>
+          </div>
+    </div>
+    
+            <div class="sellers-subtitle-wrap">
+            <h3 class="sellers-subtitle">CHOCOLATE WITH NUTS</h3>
+           </div>
+        </li>
+        <li class="sellers-list-item">
+            <div class="sellers-cover-wrap">
+            <img class="sellers-img" src="/project-sweets/assets/img-2-049f6528.jpg" alt="CHOCOLATE WITH FRUITS"/>
+            <div class="sellers-text-wrap">
+                <p class="sellers-cover-text">
+                    Chocolate with fruit is an unbeatable combination of two of the tastiest things in the world. This dessert combines delicate and aromatic chocolate with fresh and juicy fruits, creating a true poetry of taste.
+                </p>
+                </div>
+          </div>
+            <div class="sellers-subtitle-wrap" >
+            <h3 class="sellers-subtitle">CHOCOLATE WITH FRUITS</h3>
+           </div>
+        </li>
+        <li class="sellers-list-item">
+            <div class="sellers-cover-wrap">
+            <img class="sellers-img" src="/project-sweets/assets/img-3-a0bed02b.jpg" alt="DARK CHOCOLATE"/>
+            <div class="sellers-text-wrap">
+                <p class="sellers-cover-text">
+                    Dark chocolate is a rich and indulgent treat that is beloved by many chocolate enthusiasts. It is made from cocoa beans, which are roasted, ground, and then processed to produce chocolate liquor. Dark chocolate contains a higher percentage of cocoa solids compared to milk chocolate. 
+                </p>
+                </div>
+          </div>
+            <div class="sellers-subtitle-wrap" >
+            <h3 class="sellers-subtitle">DARK CHOCOLATE</h3>
+           </div>
+        </li>
+    </ul>
+    </div>
+    </section>
+
+      <section class="loved" id="loved">
+    <div class="container loved_container">
+    <h2 class="loved-title"><span>CHOCOLATE</span> IS LOVED</h2>
+    <ul class="loved-list">
+    <li class="loved-list-item">
+        <img class="loved-image" src="/project-sweets/assets/Ellipse1-ed9e0624.jpg" alt="Victoria Dobrzhanska"/>
+        <h3 class="loved-subtitle">Victoria Dobrzhanska</h3>
+        <p class="loved-text">I love this chocolate bar. Perfect combination of light crispy wafer, covered in a thin layer chocolate.</p>
+    </li>
+    <li class="loved-list-item">
+        <img class="loved-image" src="/project-sweets/assets/Ellipse2-1371d3fc.jpg" alt="Nazar Babenko"/>
+        <h3 class="loved-subtitle">Nazar Babenko</h3>
+        <p class="loved-text">This chocolate confection is a delight! A delight! The wafer is light and crisp, the hazelnut cream is smooth, and the chocolate is good.</p>
+    </li>
+    <li class="loved-list-item">
+        <img class="loved-image" src="/project-sweets/assets/Ellipse3-46dfb7f8.jpg" alt="Olena Kampusch"/>
+        <h3 class="loved-subtitle">Olena Kampusch</h3>
+        <p class="loved-text"> Chocolate is a family favourite treat. Love the delicious smooth chocolate and the creaminess inside. The wafer is soft but crunchy.</p>
+    </li>
+    </ul>
+    <button type="button" class="loved-item-btn" id="open_backdrop">Leave a review</button>
+    
+    
+    </div>
+    </section>
+    </main>
+
+    <footer class="footer" id="footer">
+    <div class="container footer-container">
+    
+        <div class="footer-top">
+            <div class="footer-heading-block">
+        <p class="footer-heading"><span>Chocolate</span> a delicious cure for a bad day</p>
+            </div>
+    
+        <div class="footer-soc-block">
+        <p class="footer-subtitle">Social networks</p>
+        <ul class="footer-soc-list">
+    
+            <li class="footer-soc-item"> 
+                <a class="footer-soc-link" 
+                href="" target="_blank" 
+                rel="noopener noreferrer">
+             <svg width="24" height="24" class="footer-soc-svg">
+                <use href="/project-sweets/assets/symbol-defs-c45f6c34.svg#icon-instagram"></use>
+            </svg>
+            </a>
+            </li>
+        
+            <li class="footer-soc-item"> 
+                <a class="footer-soc-link" 
+                href="" target="_blank" 
+                rel="noopener noreferrer">
+                <svg width="24" height="24" class="footer-soc-svg">
+                    <use href="/project-sweets/assets/symbol-defs-c45f6c34.svg#icon-facebook"></use>
+                </svg>
+            </a>
+            </li>
+        
+            <li class="footer-soc-item"> 
+                <a class="footer-soc-link" 
+                href="" target="_blank" 
+                rel="noopener noreferrer">
+                <svg width="24" height="24" class="footer-soc-svg">
+                    <use href="/project-sweets/assets/symbol-defs-c45f6c34.svg#icon-twitter"></use>
+                </svg>
+            </a>
+            </li>
+        
+        </ul>
+    </div>
+    
+    <div class="footer-contacts-block" >
+        <p class="footer-subtitle">Contact us</p>
+        <address class="footer-address">
+        <ul class="footer-address-list">
+        <li class="footer-address-item"><a class="footer-address-link" href="trl:+380684439426"> +380 (68) 443-94-26</a></li>
+        <li class="footer-address-item"><a class="footer-address-link" href="mailto:simplychoc@gmail.com"> simplychoc@gmail.com</a></li>
+        </ul>
+        </address>
+    </div>
+        </div>
+    
+        <div class="footer-bottom">
+        <nav class="footer-navigation">
+           <ul class="footer-menu-list">
+        <li class="footer-menu-item"> 
+            <a class="footer-menu-link" href="">Home</a>
+        </li>
+        <li class="footer-menu-item">
+            <a class="footer-menu-link" href="#made">How it is made?</a>
+        </li>
+        <li class="footer-menu-item">
+            <a class="footer-menu-link" href="#loved">Chocolate is loved</a>
+        </li>
+           </ul>
+    
+           <ul class="footer-menu-list-mob">
+            <li class="footer-menu-item"> 
+                <a class="footer-menu-link" href="">Home</a>
+            </li>
+            <li class="footer-menu-item">
+                <a class="footer-menu-link" href="#made">How it is made?</a>
+            </li>
+            <li class="footer-menu-item">
+                <a class="footer-menu-link" href="#products">Our products</a>
+            </li>
+            <li class="footer-menu-item">
+                <a class="footer-menu-link" href="#sellers">Top sellers</a>
+            </li>
+            <li class="footer-menu-item">
+                <a class="footer-menu-link" href="#loved">Chocolate is loved</a>
+            </li>
+               </ul>
+        </nav>
+    
+        <form class="footer-form">
+    
+            <input type="email" name="footer-email" 
+            class="footer-input" placeholder="Enter your email"
+            aria-label="footer input"> 
+            <button type="submit" class="footer-subscribe-btn" >Subscribe</button> 
+        </form>
+        </div>
+    </div>
+    </footer>
+
+    <div class="backdrop">
+    <div class="modal">
+<button type="button" class="modal-close" id="close_backdrop"> X </button>
+<p class="modal-title"> LEAVE A REVIEW ABOUT <span> OUR CHOCOLATE </span> </p>
+<form class="modal-form">
+
+   <div>
+<label for="user-name" class="modal-label">Name</label>
+<div class="modal-input-wrap">
+<input 
+type="text" 
+required
+name="user-name" 
+class="modal-input" 
+placeholder="name"
+id="user-name"/>
+<svg class="modal-icon" width="24" height="24" >
+    <use href="/project-sweets/assets/symbol-defs-c45f6c34.svg#icon-user"></use>
+</svg>
+</div>
+</div> 
+
+<div>
+<label for="email" class="modal-label">Email</label>
+<div class="modal-input-wrap">
+<input 
+type="email" 
+required
+name="user-email" 
+class="modal-input"
+placeholder="email"
+id="email"/>
+<svg class="modal-icon" width="24" height="24" >
+    <use href="/project-sweets/assets/symbol-defs-c45f6c34.svg#icon-mail"></use>
+</svg>
+</div>
+</div>
+
+<div>
+<label for="tel" class="modal-label">Phone number</label>
+<div class="modal-input-wrap">
+<input 
+type="tel" 
+required
+name="user-tel" 
+class="modal-input"
+placeholder="tel"
+id="tel"/>
+<svg class="modal-icon" width="24" height="24" >
+    <use href="/project-sweets/assets/symbol-defs-c45f6c34.svg#icon-phone"></use>
+</svg>
+</div>
+</div>
+
+<label for="user-comment" class="modal-label"> Comment
+<textarea name="user-comment" 
+id="user-comment" 
+class="modal-text"
+placeholder="Enter text"></textarea>
+</label>
+
+<div class="modal-field"> 
+    <input type="checkbox" name="policy" id="policy" 
+    class="check-input visually-hidden" value="true"/>
+    <label class="check-text" 
+    for="policy"> <span> <svg class="check-icon" width="10" height="10" >
+        <use href="/project-sweets/assets/symbol-defs-c45f6c34.svg#icon-check"></use>
+    </svg></span> I accept the terms and conditions of the 
+    <a href=""> Privacy Policy </a> </label>
+</div>
+<!-----exemple
+<input 
+type="range"   oboviazkovyi
+name="user-tel"    obovizkovyi a inshi ni
+class="modal-input"
+placeholder="tel"/>
+
+<input 
+type="file" 
+name="user-tel" 
+class="modal-input"
+placeholder="tel"/>
+
+<input 
+type="date" 
+name="user-tel" 
+class="modal-input"
+placeholder="tel"/>
+----->
+<button type="submit" class="backdrop-send-btn">Send</button>
+</form>    
+</div>
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
   </body>
 </html>

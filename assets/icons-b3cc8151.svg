@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+  <defs>
+  <symbol id="icon-scroll-up" viewBox="0 0 32 32">
+      <path d="M0 16c0 8.837 7.163 16 16 16s16-7.163 16-16-7.163-16-16-16-16 7.163-16 16zM29 16c0 7.18-5.82 13-13 13s-13-5.82-13-13 5.82-13 13-13 13 5.82 13 13z"></path>
+      <path d="M22.086 20.914l2.829-2.829-8.914-8.914-8.914 8.914 2.828 2.828 6.086-6.086z"></path>
+    </symbol>
+        <symbol id="icon-arrow_right_btn" viewBox="0 0 32 32">
+      <path d="M1.067 14.933a1.067 1.067 0 0 0 0 2.134v-2.133zm30.621 1.821a1.065 1.065 0 0 0 0-1.508L24.9 8.458a1.065 1.065 0 1 0-1.508 1.508L29.426 16l-6.034 6.034a1.065 1.065 0 1 0 1.508 1.508l6.788-6.788zm-30.621.313h29.867v-2.133H1.067v2.133z"/>
+    </symbol>
+  </defs>
+</svg>
