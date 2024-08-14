@@ -85,7 +85,7 @@ background-color: transparent;
 transition: .5s ease;
 padding: 12px 28px;
 }
-.loved-item-btn:hover, :focus {
+.loved-item-btn:hover {
     background-color: #FD9222;
     color:#FFF;
     border: 1px solid #FD9222;

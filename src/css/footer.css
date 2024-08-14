@@ -128,9 +128,7 @@
   letter-spacing: -0.02em;
   }
   
-  .footer-menu-link:hover,
-  .footer-menu-link:focus,
-  .footer-menu-link:active{
+  .footer-menu-link:hover {
   color: #FD9222;
   }
    .footer-form {
