@@ -1,0 +1,222 @@
+.taste {
+    padding-top: 120px;
+   display: flex;
+   margin: 0 auto;
+}
+.taste-container {
+    flex-direction: column;
+    align-content: center;
+}
+.taste-title span {
+    color: #FD9222;
+}
+.taste-title {
+     color: #111;
+text-align: center;
+font-size: 24px;
+font-weight: 600;
+line-height: 1.17;
+letter-spacing: -0.03em;
+text-transform: uppercase;
+
+max-width: 412px;
+margin: 0 auto;
+margin-bottom: 28px;
+}
+.taste-text {
+    color: #111;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    width: 486px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    display: none;
+}
+
+.taste-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 32px;
+    row-gap: 24px;
+}
+.taste-item {
+    border-radius: 15px;
+border: 1px solid #FD9222;
+background: #FFF;
+width: 100%;
+padding: 28px 23px;
+
+position: relative;
+border-radius: 24px;
+/*background: transparent;
+max-width: 335px;*/
+width: 100%;
+}
+
+
+.taste-list li:nth-child(3n + 1) {
+    border: 1px solid orange; /* Оранжевий для 1-го, 4-го, 7-го... */
+  }
+  
+  .taste-list li:nth-child(3n + 2) {
+    border: 1px solid rgba(143, 79, 1, 0.421); /* Білий для 2-го, 5-го, 8-го... */
+  }
+  
+  .taste-list li:nth-child(3n) {
+    border: 1px solid black; /* Чорний для 3-го, 6-го, 9-го... */
+  }
+.taste-img {
+    margin: 0 auto;
+    margin-bottom: 36px;
+}
+.taste-subtitle {
+    color: #111;
+font-size: 14px;
+font-weight: 600;
+line-height: 1.28;
+letter-spacing: -0.02em;
+padding-left: 5px;
+}
+
+.taste-back-title {
+    font-weight: 600;
+font-size: 18px;
+letter-spacing: -0.03em;
+text-transform: uppercase;
+margin-bottom: 8px;
+}
+.taste-buttons {
+    margin-bottom: 14px;
+}
+.taste-right-btn {
+    color: #FFF;
+    font-size: 10px;
+    height: 24px;
+    font-weight: 400;
+    border-radius: 100px;
+    background-color: #FD9222;
+    border: 1px solid #FD9222;
+    cursor: pointer;
+    padding: 6px 16px;
+    margin-right: 6px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+.taste-right-btn:hover,
+.taste-right-btn:focus,
+.taste-right-btn:active {
+    background-color: #FFF;
+    color:  #FD9222;
+}
+.taste-benefits-btn {
+    color: #000000;
+font-size: 10px;
+height: 24px;
+font-weight: 400;
+border-radius: 100px;
+border: 1px solid #FD9222;
+background-color: transparent;
+padding: 6px 16px;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.taste-benefits-btn:hover,
+.taste-benefits-btn:focus,
+.taste-benefits-btn:active {
+    background-color: #FD9222;
+    
+}
+.taste-back-text {
+    font-weight: 400;
+font-size: 14px;
+line-height: 1;
+letter-spacing: -0.02em;
+}
+/*cards*/
+.card__front{
+    background-color: #ffffff;
+    position: relative;
+    transition: 2s;
+    backface-visibility: hidden;
+    border-radius: 24px;
+  }
+  
+  .card__back{
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 2s;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #ffffff;
+    border-radius: 24px;
+    padding: 28px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .taste-item.is-flipped .card__front {
+    transform: rotateY(180deg);
+  }
+  .taste-item.is-flipped .card__back {
+    transform: rotateY(360deg);
+  }
+  
+
+  /**/
+  .swiper-button-next {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: 1px solid #fd932271;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 2000ms;
+    background-color: transparent;
+    position: absolute;
+    left: 250px;
+    z-index: 10;
+}
+
+.swiper-button-next.rotated .swiper-icon{
+transform: rotateY(180deg);
+}
+
+.taste-item.is-flipped .swiper-button-next {
+    transform: rotateY(180deg);  
+}
+.swiper-icon{
+    stroke: #fd932271;
+    fill: #fd932271;
+    transition: transform 0,3s;
+}
+
+
+@media screen and (min-width: 768px) {
+.taste-item {
+    width: calc((100% - 32px) / 2);
+}
+
+}
+@media screen and (min-width: 1280px) {
+    .taste-item {
+        width: calc((100% - 32px * 3) / 4);
+    }
+.taste-right-btn {
+padding: 5px;
+margin-right: 3px;
+}
+
+.taste-benefits-btn {
+padding: 5px;
+}
+
+}

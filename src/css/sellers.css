@@ -1,0 +1,134 @@
+.sellers {
+    padding-top: 120px;
+     display: flex;
+    margin: 0 auto;
+}
+.sellers-container ›{
+   
+    flex-direction: column;
+    align-content: center;
+}
+.sellers-title span{
+    color: #FD9222;
+}
+
+.sellers-title {
+    color: #111;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    max-width: 350px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+/**/
+.our-yachts-list .slick-track {
+    display: flex !important;
+}
+
+.our-yachts-list .slick-slide {
+    display: flex !important;
+    justify-content: center;
+}
+/**/
+
+.sellers-list-item {
+padding-bottom: 28px;
+width: 100%;
+position: relative;
+}
+
+.sellers-img {
+
+}
+
+.sellers-cover-wrap {
+    position: relative;
+    overflow: hidden;
+    
+}
+.sellers-text-wrap {
+    position: absolute;
+    border-radius: 15px 15px 0px 0px;
+background: linear-gradient(165deg, rgba(253, 253, 255, 0.10) 3.97%, rgba(8, 2, 21, 0.00) 109.76%);
+-webkit-backdrop-filter: blur(7.5px);
+backdrop-filter: blur(10px);
+    top: 0;
+display: flex;
+align-items: center;
+padding: 0 40px;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms ease-in-out;
+    transition: transform 500ms ease-in-out;
+
+}
+
+
+.sellers-cover-text {
+    color: #FFF;
+font-size: 14px;
+font-weight: 400;
+line-height: 1.29;
+letter-spacing: -0.02em;
+
+
+}
+.sellers-subtitle-wrap {
+    border-radius: 0px 0px 15px 15px;
+border-right: 1px solid rgba(17, 17, 17, 0.10);
+border-bottom: 1px solid rgba(17, 17, 17, 0.10);
+border-left: 1px solid rgba(17, 17, 17, 0.10);
+background: #FFF;
+
+}
+
+.sellers-list-item:hover .sellers-text-wrap {
+    transform: translateY(0);
+}
+.sellers-subtitle {
+    color: #111111;
+    font-size: 18px;
+    margin: 0 auto;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    text-align: center;
+}
+@media screen and (min-width: 768px) {
+/*.sellers {
+    max-width: 704px;
+}*/
+.sellers-list {
+    display: flex;
+    gap: 16px;
+
+}
+.sellers-list-item {
+    padding-bottom: 28px;
+    width: calc((100% - 16px) / 2);
+}
+.sellers-list-item:last-child {
+display: none;
+}
+}
+@media screen and (min-width: 1280px) {
+   /* .sellers {
+        max-width: 1136px;
+    }*/
+    .sellers-list {
+        display: flex;
+        gap: 16px;
+    
+    }
+    .sellers-list-item {
+    padding-bottom: 28px;
+    width: calc((100% - 16px * 2) / 3);
+}
+.sellers-list-item:last-child {
+    display: block;
+    }
+}
