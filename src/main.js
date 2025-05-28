@@ -60,30 +60,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //open modal
 document.addEventListener('DOMContentLoaded', function() {
-  const openModalBtn = document.getElementById('open_modal'); // кнопка для відкриття
+  const openModalBtn = document.getElementById('open_modal') || document.getElementById('open_modal_footer'); 
   const modal = document.querySelector('.modal-backdrop');
-  const closeBtn = document.getElementById('close_modal'); // кнопка закриття
+  const closeBtn = document.getElementById('close_modal'); 
   const form = document.querySelector('.modal-form');
   // Перевірка, що елементи знайдені
   if (!openModalBtn || !modal || !closeBtn || !form) {
     console.warn('Деякі елементи не знайдені. Перевірте HTML-структуру.');
     return;
   }
-  // Відкрити модальне вікно
+  
   openModalBtn.addEventListener('click', () => {
     modal.style.display = 'block';
   });
-  // Закрити при натисканні на кнопку "X"
+  
   closeBtn.addEventListener('click', () => {
     modal.style.display = 'none';
   });
-  // Закрити при натисканні за межами модального вікна
+  
   modal.addEventListener('click', (e) => {
     if (e.target === modal) {
       modal.style.display = 'none';
     }
   });
-  // Обробка форми
+  
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     const name = document.getElementById('user-name').value;
@@ -96,9 +96,9 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Phone:', tel);
     console.log('Comment:', comment);
     console.log('Privacy Policy accepted:', policyAccepted);
-    // Закрити модальне вікно
+    
     modal.style.display = 'none';
-    // Очистити форму
+   
     form.reset();
   });
 });
