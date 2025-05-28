@@ -219,7 +219,7 @@ transform: rotateY(180deg);
 @media screen and (min-width: 1280px) {
     .taste-item {
         width: calc((100% - 32px * 3) / 4);
-        height: 450px;
+        height: 480px;
     }
     .card__back {
         top: 0;
