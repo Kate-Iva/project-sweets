@@ -47,6 +47,9 @@ margin-right: 14px;
 padding: 12px 28px;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+display: inline-flex;
+margin: auto;
+align-items: center;
 }
 .hero-buy-btn:hover,
 .hero-buy-btn:focus,
@@ -68,6 +71,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 display: inline-flex;
 margin: auto;
+align-items: center;
 }
 .hero-made-btn:hover,
 .hero-made-btn:focus,
