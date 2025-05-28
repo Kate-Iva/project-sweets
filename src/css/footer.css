@@ -23,6 +23,7 @@
   .footer-heading-block {
   margin-right: auto;
   margin-bottom: 32px;
+  margin-top: 20px;
   }
   
   .footer-heading {
@@ -133,6 +134,7 @@
   }
    .footer-form {
   display: flex;
+  margin-bottom: 20px;
    }
   .footer-input {
       width: 207px;
