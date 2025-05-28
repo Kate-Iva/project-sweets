@@ -1,0 +1,218 @@
+/*MODAL*/
+.modal-backdrop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(18, 16, 13, 0.607);
+   opacity: 0;
+    visibility: hidden;
+    pointer-events: none;/* */
+}
+
+.modal-bay {
+    min-width: 597px;
+    min-height: 794px;
+    border-radius: 15px;
+background: #FAFAFA;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+padding: 40px;
+}
+
+.modal-close {
+    margin-left: auto;
+    position: absolute;
+top: 24px;
+right: 24px;
+width: 30px;
+height: 30px;
+border: 1px solid #868484;
+background-color: #efeeee;
+border-radius: 15px;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 0;
+}
+.modal-title {
+    color: #111;
+font-size: 24px;
+font-weight: 600;
+line-height: 1.17; 
+letter-spacing: -0.03em;
+text-transform: uppercase;
+text-align: left;
+max-width: 298px;
+margin-bottom: 42px;
+}
+.modal-title span{
+    color: #FD9222;
+}
+
+.modal-form {
+
+}
+
+.modal-input {
+    width: 100%;
+    height: 68px;
+    display: flex;
+align-items: center;
+align-self: stretch;
+border-radius: 13px;
+border: 1.5px solid rgba(17, 17, 17, 0.05);
+box-shadow: 0px 5.445px 5.445px 0px rgba(0, 0, 0, 0.03);
+margin-bottom: 18px;
+background-color: transparent;
+padding-left: 54px;
+outline: transparent;
+}
+.modal-input:focus {
+    border-color: #FD9222;
+}
+
+.modal-input:focus + .modal-icon{
+    stroke: #FD9222;
+}
+.modal-input::placeholder {
+color: rgb(215, 214, 213);
+}
+.modal-input:hover::placeholder {
+    
+    color: rgb(248, 192, 88);
+    }
+/*.modal-input:focus::placeholder {
+        color: ;
+        }*/
+
+.modal-label {
+    color: rgba(64, 64, 64, 0.30);
+font-size: 14px;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.02em;
+margin-bottom: 8px;
+display: block;
+}
+.modal-input-wrap {
+    position: relative;
+}
+.modal-icon {
+    fill: transparent;
+    stroke: #404040;
+    position: absolute;
+    left: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.modal-text {
+    width: 100%;
+    height: 137px;
+    display: flex;
+align-items: center;
+align-self: stretch;
+border-radius: 13px;
+border: 1.5px solid rgba(17, 17, 17, 0.05);
+box-shadow: 0px 5.445px 5.445px 0px rgba(0, 0, 0, 0.03);
+margin-bottom: 18px;
+background-color: transparent;
+padding: 24px 22px;
+outline: transparent;
+resize: none;
+}
+.check-input {
+
+}
+
+.check-text {
+    color: rgba(64, 64, 64, 0.60);
+font-size: 14px;
+line-height: normal;
+letter-spacing: -0.02em;
+display: flex;
+align-items: center;
+/* position: relative; */
+}
+
+.check-text a {
+    color: var(--orange, #FD9222);
+font-size: 14px;
+line-height: normal;
+letter-spacing: -0.02em;
+text-decoration-line: underline;
+
+}
+
+
+.check-text span {
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+border: 1px solid rgba(17, 17, 17, 0.14);
+margin-right: 12px;
+display: flex;
+align-items: center;
+justify-content: center;
+fill: transparent;
+
+}
+.check-input:checked + .check-text span {
+background-color: #FD9222;
+border: none;
+fill: #FFF;
+}
+
+.backdrop-send-btn {
+    color: #FFF;
+font-family: inherit;
+font-size: 14px;
+font-weight: 600;
+line-height: normal;
+height: 52px;
+width: 120px;
+/*padding: 14px 26px;*/
+background-color: #FD9222;
+border-radius: 100px;
+border: none;
+margin-left: 8px;
+margin-top: 20px;
+}
+.backdrop-send-btn:hover {
+  background-color: transparent;
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.487);
+}
+
+/*
+.check-text::before {
+    content: "";
+    width: 40px;
+    height: 20px;
+    border-radius: 50px;
+border: 1px solid #a0a0a0;
+transition-duration: 300ms;
+} 
+
+.check-text::after {
+content: "";
+position: absolute;
+top: 2px;
+left: 2px;
+width: 18px;
+height: 18px;
+border-radius: 50px;
+border: 1px solid #a6a5a5;
+transition-duration: 300ms;
+}
+.check-input:checked + .check-text::after {
+    transform: translate(18px);
+    background-color: #9f9e9e;
+}
+
+.check-input:checked + .check-text::after {
+    background-color: #FD9222;
+}
+*/

@@ -14,7 +14,7 @@
     </h1>
   <div class="hero-buttons">
     <div class="hero-buttons-right">
-    <button type="button" class="hero-buy-btn">Buy now</button>
+    <button type="button" class="hero-buy-btn" id="open_modal">Buy now</button>
     <a href="#made" class="hero-made-btn">How it is made</a>
   </div>
     <div class="hero-down-block">
@@ -30,3 +30,81 @@
 </div> 
 </div>
 </section>
+
+<!-- MODAL -->
+<div class="modal-backdrop"
+style="display: none;"
+id="modal-backdrop">
+    <div class="modal-bay">
+<button type="button" class="close_modal"  id="close_modal"> X </button>
+<p class="modal-title"> SUBSCRIBE AND BAY <span> OUR CHOCOLATE </span> </p>
+<form class="modal-form">
+
+   <div>
+<label for="user-name" class="modal-label">Name</label>
+<div class="modal-input-wrap">
+<input 
+type="text" 
+required
+name="user-name" 
+class="modal-input" 
+placeholder="name"
+id="user-name"/>
+<svg class="modal-icon" width="24" height="24" >
+    <use href="./images/symbol-defs.svg#icon-user"></use>
+</svg>
+</div>
+</div> 
+
+<div>
+<label for="email" class="modal-label">Email</label>
+<div class="modal-input-wrap">
+<input 
+type="email" 
+required
+name="user-email" 
+class="modal-input"
+placeholder="email"
+id="email"/>
+<svg class="modal-icon" width="24" height="24" >
+    <use href="./images/symbol-defs.svg#icon-mail"></use>
+</svg>
+</div>
+</div>
+
+<div>
+<label for="tel" class="modal-label">Phone number</label>
+<div class="modal-input-wrap">
+<input 
+type="tel" 
+required
+name="user-tel" 
+class="modal-input"
+placeholder="tel"
+id="tel"/>
+<svg class="modal-icon" width="24" height="24" >
+    <use href="./images/symbol-defs.svg#icon-phone"></use>
+</svg>
+</div>
+</div>
+
+<label for="user-comment" class="modal-label"> Comment
+<textarea name="user-comment" 
+id="user-comment" 
+class="modal-text"
+placeholder="Enter text"></textarea>
+</label>
+
+<div class="modal-field"> 
+    <input type="checkbox" name="policy" id="policy" 
+    class="check-input visually-hidden" value="true"/>
+    <label class="check-text" 
+    for="policy"> <span> <svg class="check-icon" width="10" height="10" >
+        <use href="./images/symbol-defs.svg#icon-check"></use>
+    </svg></span> I accept the terms and conditions of the 
+    <a href=""> Privacy Policy </a> </label>
+</div>
+<button type="submit" class="backdrop-modal-send">Send</button>
+</form>    
+</div>
+</div>

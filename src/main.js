@@ -40,13 +40,13 @@ document.addEventListener('DOMContentLoaded', function() {
   function closeBackDrop() {
     backDrop.style.opacity = '0';
     backDrop.style.visibility = 'hidden';
-    backDrop.style.pointerEvents = 'none'; // Заборонити взаємодію з бекдропом
+    backDrop.style.pointerEvents = 'none'; 
   }
 
   openBD.addEventListener('click', function() {
-    backDrop.style.opacity = '1'; // Змінено на '1'
-    backDrop.style.visibility = 'visible'; // Змінено на 'visible'
-    backDrop.style.pointerEvents = 'auto'; // Дозволити взаємодію з бекдропом
+    backDrop.style.opacity = '1'; 
+    backDrop.style.visibility = 'visible'; 
+    backDrop.style.pointerEvents = 'auto'; 
   });
 
   closeBD.addEventListener('click', function() {
@@ -57,6 +57,52 @@ document.addEventListener('DOMContentLoaded', function() {
     closeBackDrop();
   });
 });
+
+//open modal
+document.addEventListener('DOMContentLoaded', function() {
+  const openModalBtn = document.getElementById('open_modal'); // кнопка для відкриття
+  const modal = document.querySelector('.modal-backdrop');
+  const closeBtn = document.getElementById('close_modal'); // кнопка закриття
+  const form = document.querySelector('.modal-form');
+  // Перевірка, що елементи знайдені
+  if (!openModalBtn || !modal || !closeBtn || !form) {
+    console.warn('Деякі елементи не знайдені. Перевірте HTML-структуру.');
+    return;
+  }
+  // Відкрити модальне вікно
+  openModalBtn.addEventListener('click', () => {
+    modal.style.display = 'block';
+  });
+  // Закрити при натисканні на кнопку "X"
+  closeBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+  // Закрити при натисканні за межами модального вікна
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+  // Обробка форми
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = document.getElementById('user-name').value;
+    const email = document.getElementById('email').value;
+    const tel = document.getElementById('tel').value;
+    const comment = document.getElementById('user-comment').value;
+    const policyAccepted = document.getElementById('policy').checked;
+    console.log('Name:', name);
+    console.log('Email:', email);
+    console.log('Phone:', tel);
+    console.log('Comment:', comment);
+    console.log('Privacy Policy accepted:', policyAccepted);
+    // Закрити модальне вікно
+    modal.style.display = 'none';
+    // Очистити форму
+    form.reset();
+  });
+});
+
 
 //плавний скрол по сторінці
 document.addEventListener('DOMContentLoaded', function() {
@@ -77,22 +123,20 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 //taste cards
-// Отримуємо всі елементи карток
 var cards = document.querySelectorAll('.taste-item');
 
-// Проходимося по кожній картці
 [...cards].forEach(card => {
- // Знаходимо кнопку всередині картки
+
  const button = card.querySelector('.swiper-button-next');
 
- // Додаємо обробник подій на клік
- button.addEventListener('click', function (event) {
- event.stopPropagation(); // Зупинити подію клік на батьківському вському елементі
 
- // Перемикаємо клас для розвертання картки
+ button.addEventListener('click', function (event) {
+ event.stopPropagation(); 
+
+
  card.classList.toggle('is-flipped');
 
- // Додаємо або видаляємо клас для обертання іконки
+
  if (card.classList.contains('is-flipped')) {
  button.classList.add('rotated');
  } else {
